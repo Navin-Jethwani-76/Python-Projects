@@ -1,0 +1,19 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="{%url 'index'%}" class="brand-logo">Portfolio<i class="material-icons right">create</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="https://github.com/Navin-Jethwani/" target="_blank">Github<i class="material-icons right">cloud_queue</i></a></li>
+        <li><a href="https://www.linkedin.com/in/navin-jethwani/" target="_blank">LinkedIn <i class="material-icons right">arrow_forward</i></a></li>
+        <li><a href="{% url 'projects' %}">Projects<i class="material-icons right">dashboard</i></a></li>
+      </ul>
+  </div>
+</nav>
+        
+<style>
+.nav-wrapper{
+  background-color: cadetblue;
+}
+.brand-logo{
+  margin-left: 10px;
+}
+</style>

@@ -1,0 +1,42 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+    <h4 class = 'center-align'>Projects - Navin Jethwani</h4>
+    <div class="container">
+        <ul class="collapsible blue-grey darken-1">
+            <li>
+              <div class="collapsible-header">Django Project</div> 
+              <div class="collapsible-body white-text">
+                  <span>
+                      <p>The one you are navigating right now. Assignment Project on a course (Python for developers By Coding-Blocks)<br>
+                      <br>Description:<br>A basic Portfolio Website written in basic HTML5 and integrated with Python and uses Django as it's basic framework.
+                      <br> If you are here, you already know how this looks. <br> My project uses materializecss as it's source for basic CSS and JS.
+                      </p> <br>
+                      <a href="https://github.com/Navin-Jethwani/Python-Projects/tree/main/Django%20Project/" target="_blank" class="white-text">Project Code<i class="material-icons">open_in_new</i></a>
+                  </span>
+                </div>
+            </li>
+            <li>
+              <div class="collapsible-header">Flask Project</div>
+              <div class="collapsible-body white-text">
+                  <span>
+                      <p>Basic Flask Project integrated with a machine learning Linear-Regression Model<br> 
+                      <br>Description: <br> A basic Python app using flask as it's base framework integrated with a machine leaning project. <br> Linear Regression project in machine learning is performed on a database <br> having training data as number of hours one studies and the algorithm outputs predicted marks he/she might get. <br> 
+                      </p> <br>
+                      <a href="https://github.com/Navin-Jethwani/marks-prediction/" target="_blank" class="white-text">Project Code<i class="material-icons">open_in_new</i></a>
+                  </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+{%endblock%}
+{% block script %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+  });
+</script>
+
+{%endblock%}

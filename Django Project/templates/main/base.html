@@ -1,0 +1,27 @@
+{% load static %}
+{% include 'main/nav.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href='{% static "css/materialize.min.css" %}'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="{% static 'js/materialize.min.js' %}"></script>
+</head>
+<body>
+    {%block content%}
+    {%endblock%}
+     
+    {% block script %} {%endblock%}
+
+    {% include 'main/footer.html' %}
+</body>
+</html>
+
+<style>
+    body{
+        background-color: darkgray;
+    }
+</style>
